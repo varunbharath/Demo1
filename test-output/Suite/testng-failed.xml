@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="2" parallel="methods" name="Test(failed)" verbose="2">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="exeution.Test_execution">
+        <methods>
+          <include name="radiobutton"/>
+        </methods>
+      </class> <!-- exeution.Test_execution -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="2" parallel="methods" name="Test2(failed)" verbose="2">
+    <parameter name="browser" value="Edge"/>
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="exeution.Test_execution">
+        <methods>
+          <include name="radiobutton"/>
+        </methods>
+      </class> <!-- exeution.Test_execution -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
